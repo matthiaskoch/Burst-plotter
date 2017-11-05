@@ -1,6 +1,7 @@
-# Burst-plotter
+# Burst-plotter for OSX
 
 This is a Node.js app, that will help you to create hundreds off small plots for BURST Coin mining.
+I use the https://github.com/r-majere/mjminer.
 
 
 You need Node.js and NPM installed.
