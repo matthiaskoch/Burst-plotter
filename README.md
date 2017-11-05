@@ -41,6 +41,8 @@ cores = 4;
 The number of cpu threats. On a 4 core intel cpu, this will take 50% of cpu power.
 Test it out.. I am also ok with 2, that means 25 % cpu power for me and will run nice at the background, but needs 100% more time than 4 threads.
 
+# Start to plot:
+Type into your terminal sudo node app.js.
 
 Time to plot
 On my 4 core intel i7 mac mini server with 16 GB Ram, a 1 GB plot with 4 threads will take a minute.
