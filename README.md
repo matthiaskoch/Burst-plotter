@@ -1,4 +1,4 @@
-# Burst-plotter for OSX
+# Node.js Burst-plotter for OSX
 
 This is a Node.js app, that will help you to create hundreds off small plots for BURST Coin mining.
 I use the https://github.com/r-majere/mjminer.
@@ -17,8 +17,9 @@ In my Case it is BURSTMining/mjminer-master
 
 # How to plot:
 
-You need a Burst Wallet and your Burst ID (not your wallet adress)
-Check this before first start
+You need a Burst Wallet and your Burst ID (not your wallet adress).
+
+Check this before first start:
 
 counts = 2   
 To test your system, start with less... later you can make 100.. or 1000..
@@ -45,5 +46,13 @@ Time to plot
 On my 4 core intel i7 mac mini server with 16 GB Ram, a 1 GB plot with 4 threads will take a minute.
 For a 100 GB plot with 4 threads it will take an our an 15 minutes.
 
-If your plot 100 files with 1 GB, or 1 file with 100 GB, it needs the same time.
+If you plot 100 files with 1 GB, or 1 file with 100 GB, it needs the same time.
 So make small plots.
+
+# Burst plots in general
+
+According to my experience, it will be the best to make small partitions with lots of small plots.
+For example a 1 TB hdd should have two partitions.
+Every partition needs only a folder called Burst. 
+Inside this folder you need a miningadress.txt file with your Burst Account Number. 
+And a folder called plots. Here goes the files in, with you created with this app.
