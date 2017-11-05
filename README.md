@@ -14,25 +14,25 @@ Download the plotter from ... and unzip it into a Subfolder of this app.
 In my Case it is BURSTMining/mjminer-master
 
 
-How to plot:
+# How to plot:
 
 You need a Burst Wallet and your Burst ID (not your wallet adress)
 Check this before first start
 
 counts = 2   
-To test your system, start with less... later you cam make 100.. or 1000..
+To test your system, start with less... later you can make 100.. or 1000..
 
 start = 1100000000 // my ongoing number 11 for the elevent partition on x hdd´s.
 
-For your first hdd an your first partition it will start by 1 followed by 8 zeros.
+For your first hdd and your first partition it will start by 1 followed by 8 zeros.
 Every new Drive shout have its own number at first. So your second partition will start with 2 00 000 000.
 
 
-size = 4096;          // 1 GB = 4096 // 10 GB = 40960 // 50 GB 204800 // 100 GB = 409600
+size = 4096;         
 This ist the size of a plot. Print small plots.
 To calculate the number for a 1 GB Plot, multiple 1024 by 4.
 
-memory = 8192;        // 8192 = 4 GB
+memory = 8192;      
 The amount of memory. Not sure whats best..
 
 cores = 4;
