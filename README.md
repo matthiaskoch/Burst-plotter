@@ -54,5 +54,5 @@ So make small plots.
 According to my experience, it will be the best to make small partitions with lots of small plots.
 For example a 1 TB hdd should have two partitions.
 Every partition needs only a folder called Burst. 
-Inside this folder you need a miningadress.txt file with your Burst Account Number. 
+Inside this folder you need a miningaddress.txt file with your Burst walled address. 
 And a folder called plots. Here goes the files in, with you created with this app.
