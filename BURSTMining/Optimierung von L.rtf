@@ -1,0 +1,364 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Consolas;\f2\fmodern\fcharset0 Courier;
+\f3\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red241\green241\blue241;\red255\green255\blue255;
+\red0\green0\blue0;\red255\green255\blue255;\red255\green238\blue149;\red21\green102\blue47;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c95686\c95686\c95686;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c100000\c94118\c64706;\cssrgb\c7451\c46667\c23922;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21920\viewh14720\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 optimieren von L\
+\
+optimiert werden soll 1,5 tb file\
+\
+Plots / memory : \
+\
+4096 = 1 GB / 4096\
+40960 = 10 GB / 8192\
+409600 = 100 GB / 8192\
+409600 = 100 GB / 16384 ???\
+\
+\
+524288 = 128 GB ( 1024 *128 ) * 4\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs34\fsmilli17136 \cf2 \cb3 \expnd0\expndtw0\kerning0
+memory: 8192 = 2 gb\
+32768 = 8 gb
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+letzter Plot 17117098875997643477_1204214273_1041920_1041920 = 273,13 GB\
+\
+n\'e4chster Plot =  1204214273 + 1041920 = 1205256193\
+\
+Start next plot \
+\
+1205256193\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb4 \
+1
+\f2\fs26 \cf5 \CocoaLigature0 .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 1205256193
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -n 409600 -m 8192 -t 4\
+\
+	Creating plots for nonces 1205256193 to 1205665793 (107 GB) using 2048 MB memory and 4 threads\
+\
+	ca. 1:17 ca. 5200 non/min\
+\
+2. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1205665793 -n 
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 524288
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -m 
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 16384
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -t 4\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb6 	Creating plots for nonces 1205665793 to 1206190081 (137 GB) using 4096 MB memory and 4 threads\
+	Using fcntl::F_SETSIZE to expand file size to 128GB\
+	Resizing file to 137438953472 of 137438953472 (100.00%) Done!\
+	\
+	1.56% Percent done. 5174 nonces/minute, 1:41 left (can restore from step 0) \
+\
+\
+3.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb4 	\cf5 \cb6 sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1206190081 -n 
+\f0\fs24 \CocoaLigature1 409600
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 16384
+\f2\fs26 \CocoaLigature0  -t 4\
+\
+	Creating plots for nonces 1206190081 to 1206599681 (107 GB) using 4096 MB memory and 4 threads\
+	Using fcntl::F_SETSIZE to expand file size to 100GB\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf5 \CocoaLigature1 		\CocoaLigature0 Resizing file to 107374182400 of 107374182400 (100.00%) Done!\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 	2.00% Percent done. 5119 nonces/minute, 1:20 left (can restore from step 0) \
+\
+4.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb4 	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1206599681 -n 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 409600
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -m 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 8192
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -t 4\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb6 	Creating plots for nonces 1206599681 to 1207009281 (107 GB) using 2048 MB memory and 4 threads\
+	Using fcntl::F_SETSIZE to expand file size to 100GB\
+	Resizing file to 107374182400 of 107374182400 (100.00%) Done!\
+	1.00% Percent done. 4797 nonces/minute, 1:25 left (can restore from step 0)\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb4 5.\
+\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1207009281 -n 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 409600
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -m 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 16384
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -t 4\cf5 \cb6 \
+\
+	Creating plots for nonces 1207009281 to 1207418881 (107 GB) using 4096 MB memory and 4 threads\
+\
+	2.00% Percent done. 5131 nonces/minute, 1:19 left (can restore from step 0)\
+\
+\
+\cf5 \cb4 5.\
+\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1207418881 -n 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 409600
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -m 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 16384
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -t 4\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb6 \
+	Creating plots for nonces 1207418881 to 1207828481 (107 GB) using 4096 MB memory and 4 threads\
+\
+6.\
+\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1207828481 -n 
+\f0\fs24 \CocoaLigature1 409600
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+\
+	Creating plots for nonces 1207828481 to 1208238081 (107 GB) using 2048 MB memory and 4 threads\
+	1.00% Percent done. 5131 nonces/minute, 1:19 left (can restore from step 0)\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb4 7.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb6 	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1208238081 -n 
+\f0\fs24 \CocoaLigature1 409600
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 1208238081 to 1208647681 (107 GB) using 2048 MB memory and 4 threads\
+\
+\
+8.\
+\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1208647681 -n 
+\f0\fs24 \CocoaLigature1 409600
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+\
+\
+\
+Ab jetzt weiter im Ordner USB_HDD_01_02 da Laufwerk L gel\'f6scht und gemounted\
+\
+\
+1.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 0 -n 
+\f0\fs24 \CocoaLigature1 409600
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 0 to 409600 (107 GB) using 2048 MB memory and 4 threads\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb4 2. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 409600 -n 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 409600
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -m 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 8192
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -t 4\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb6 	Creating plots for nonces 409600 to 819200 (107 GB) using 2048 MB memory and 4 threads\
+\
+3. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD/Plots -s 819200 -n 
+\f0\fs24 \CocoaLigature1 409600
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 819200 to 1228800 (107 GB) using 2048 MB memory and 4 threads\
+\
+4. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1228800 -n 
+\f0\fs24 \CocoaLigature1 409600
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 1228800 to 1638400 (107 GB) using 2048 MB memory and 4 threads\
+\
+\cf7 \cb8 Creating plots for nonces 1228800 to 1269760 (10 GB) using 2048 MB memory and 4 threads\cf5 \cb6 \
+\
+5. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s \cf7 \cb8 1269760\cf5 \cb6  -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 1638400 to 1679360 (10 GB) using 2048 MB memory and 4 threads\
+\
+	\cf7 \cb8 Creating plots for nonces 1269760 to 1310720 (10 GB) using 2048 MB memory and 4 threads\cf5 \cb6 \
+6. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s \cf7 \cb8 1310720\cf5 \cb6  -n 
+\f0\fs24 \CocoaLigature1 4096
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+Creating plots for nonces 1679360 to 1720320 (10 GB) using 2048 MB memory and 4 threads\
+\
+7. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1720320 -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+Creating plots for nonces 1720320 to 1761280 (10 GB) using 2048 MB memory and 4 threads\
+\
+8. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1761280 -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 1761280 to 1802240 (10 GB) using 2048 MB memory and 4 threads\
+\
+\
+9. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1802240 -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	
+\f3\fs22 Creating plots for nonces 1802240 to 1806336 (1 GB) using 2048 MB memory and 4 threads
+\f2\fs26 \
+\
+\
+\
+10. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 
+\f3\fs22 1806336
+\f2\fs26  -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+\
+11. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 
+\f3\fs22 1847296
+\f2\fs26  -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+Creating plots for nonces 1847296 to 1888256 (10 GB) using 2048 MB memory and 4 threads\
+\
+	\
+12. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1888256 -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs22 \cf5 	Creating plots for nonces 1888256 to 1929216 (10 GB) using 2048 MB memory and 4 threads
+\f2\fs26 \
+\
+\
+13. \
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 
+\f3\fs22 1929216
+\f2\fs26  -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+
+\f3\fs22 Creating plots for nonces 1929216 to 1933312 (1 GB) using 2048 MB memory and 4 threads
+\f2\fs26 \
+\
+14.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 
+\f3\fs22 1933312
+\f2\fs26  -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+
+\f3\fs22 Creating plots for nonces 1933312 to 1937408 (1 GB) using 2048 MB memory and 4 threads
+\f2\fs26 \
+\
+15.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 
+\f3\fs22 1937408
+\f2\fs26  -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 1937408 to 1978368 (10 GB) using 2048 MB memory and 4 threads\
+\
+\
+15.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 1978368 -n 
+\f0\fs24 \CocoaLigature1 40960
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 1978368 to 2019328 (10 GB) using 2048 MB memory and 4 threads\
+\
+16.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 2019328 -n 
+\f0\fs24 \CocoaLigature1 4096
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 2019328 to 2023424 (1 GB) using 2048 MB memory and 4 threads\
+\
+\
+17.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 2023424 -n 
+\f0\fs24 \CocoaLigature1 4096
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 2023424 to 2027520 (1 GB) using 2048 MB memory and 4 threads\
+\
+18.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 2027520 -n 
+\f0\fs24 \CocoaLigature1 4096
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+	Creating plots for nonces 2027520 to 2031616 (1 GB) using 2048 MB memory and 4 threads\
+19.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 2031616 -n 
+\f0\fs24 \CocoaLigature1 4096
+\f2\fs26 \CocoaLigature0  -m 
+\f0\fs24 \CocoaLigature1 8192
+\f2\fs26 \CocoaLigature0  -t 4\
+Creating plots for nonces 2031616 to 2035712 (1 GB) using 2048 MB memory and 4 threads\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \cb4 \
+20.\
+	sudo ./plot -k 17117098875997643477 -x 1 -d /Volumes/Macintosh\\ HD2/Plots -s 2035712 -n 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 4096
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -m 
+\f0\fs24 \cf5 \cb4 \CocoaLigature1 8192
+\f2\fs26 \cf5 \cb4 \CocoaLigature0  -t 4\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf7 \cb8 Creating plots for nonces 2035712 to 2039808 (1 GB) using 2048 MB memory and 4 threads\
+}

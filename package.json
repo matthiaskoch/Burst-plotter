@@ -1,0 +1,28 @@
+{
+  "name": "burst-plotter",
+  "version": "1.0.0",
+  "description": "Node.js app to make plots for BURST Coin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthiaskoch/Burst-plotter.git"
+  },
+  "keywords": [
+    "Burst",
+    "Node.js",
+    "HDD",
+    "mining"
+  ],
+  "author": "Matthias Koch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthiaskoch/Burst-plotter/issues"
+  },
+  "homepage": "https://github.com/matthiaskoch/Burst-plotter#readme",
+  "dependencies": {
+    "moment": "^2.19.1"
+  }
+}
