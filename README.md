@@ -11,7 +11,7 @@ Download the folder and unzip it for example... to your Desktop.
 Open a terminal and cd into the folder.
 Type npm install
 
-Download the plotter from ... and unzip it into a Subfolder of this app.
+Download the plotter from https://github.com/r-majere/mjminer and unzip it into a Subfolder of this app.
 In my Case it is BURSTMining/mjminer-master
 
 
